@@ -1,5 +1,6 @@
 import discord
 import datetime
+import os
 
 
 client = discord.Client()
@@ -62,4 +63,5 @@ async def on_message(message):
 
 
 
-client.run('NTYxODExODg2MjQ1Njc1MDQ5.XKHGfw.HU6S2XJZGSz9ugyaZf9VKjd4SDc')
+access_token = os.environ["BOT_TOKEN"]        
+client.run(access_token')
